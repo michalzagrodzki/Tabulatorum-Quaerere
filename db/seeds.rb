@@ -8,17 +8,7 @@
 
 # List of stories for welcome_page
 story_list = [
-    ["Malta" ],
-    ["Cinque Terre" ],
-    ["Wicklow Way" ],
-    ["Billund" ],
-    ["Copenhagen" ],
-    ["Japan" ],
-    ["Tokyo" ],
-    ["Stuttgart" ],
-    ["Salzburg" ],
-    ["Florence" ],
-    ["Pisa" ]
+    "Malta", "Cinque Terre", "Wicklow Way", "Billund", "Copenhagen", "Japan", "Tokyo", "Stuttgart", "Salzburg", "Florence", "Pisa"
 ]
 
 # Loop for putting names into db
