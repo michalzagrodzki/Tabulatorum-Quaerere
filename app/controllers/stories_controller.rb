@@ -1,9 +1,13 @@
 class StoriesController < ApplicationController
 
-  before_action :fetch_stories, only: [:index ]
+  before_action :fetch_stories, only: [:index, :show ]
 
   def index
     @stories = Story.all
+  end
+
+  def show
+    @story = Story.find(params[:id])
   end
 
   private
