@@ -4,6 +4,12 @@ class StoriesController < ApplicationController
 
   def index
     @stories = Story.all
+
+    if params[:search]
+      @stories = Story.search(params[:search]).order('created_at desc')
+    else
+      @stories = Story.order('created_at desc')
+    end
   end
 
   def show
